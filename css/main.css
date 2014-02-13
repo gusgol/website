@@ -1,0 +1,92 @@
+
+
+body {
+	background-color: #7DA8A8;
+}
+
+.main {
+	text-align: center;
+	position: relative;
+	top: 190px;
+}
+
+.main div{
+	margin: auto auto 33px auto;
+
+}
+
+.avatar {
+	height: auto;
+	width: 13%;
+	margin-bottom: 100px;
+	transition: width 0.8s;
+}
+
+.avatar:hover {
+	width: 14.5%;
+	transition: width 1s;
+}
+
+.avatar img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+h2 {
+	font-family: 'HappyMonkey-Regular', cursive;
+	font-size: 1.5em;
+	color: #654B4B;
+}
+
+h2:hover {
+	font-size: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 20px;
+}
+
+.links ul li{
+	display: inline;
+}
+
+i {
+	color: #571D1D;
+
+}
+
+i:hover {
+	
+}
+
+
+.fa-inverse {
+	color: #89A8A8;
+	opacity: 1;
+}
+
+
+a {
+	opacity: 0.5;
+	text-decoration: none;
+	transition: font-size 0.8s;
+}
+
+a:hover {
+	opacity: 1;
+	font-size: 1.1em;
+	transition: font-size 1s;
+}
+
+
+@font-face	{
+	font-family: 'HappyMonkey-Regular';
+	src: url('fonts/HappyMonkey-Regular.ttf');
+}
+
+
