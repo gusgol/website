@@ -1,31 +1,44 @@
 
 
 body {
-	background-color: #7DA8A8;
+	background: none #7DA8A8 no-repeat center center fixed;
+  	background-size: cover;
+  	transition: background-image 5s;
+	transition: background-color 1s;
+
 }
 
 .main {
-	text-align: center;
 	position: relative;
-	top: 190px;
+	top: 225px;
+	left: -16%;
 }
 
 .main div{
-	margin: auto auto 33px auto;
+	margin: auto auto auto auto;
 
 }
 
 .avatar {
 	height: auto;
-	width: 13%;
+	width: 14%;
 	margin-bottom: 100px;
 	transition: width 0.8s;
 }
 
+.links {
+	width: 325%;
+	position: relative;
+	top: -290px;
+	left: 250px;
+}
+
+/*
 .avatar:hover {
 	width: 14.5%;
 	transition: width 1s;
 }
+*/
 
 .avatar img{
 	height: 100%;
@@ -39,9 +52,6 @@ h2 {
 	color: #654B4B;
 }
 
-h2:hover {
-	font-size: 1.5em;
-}
 
 ul {
 	list-style-type: none;
@@ -57,11 +67,9 @@ li {
 
 i {
 	color: #571D1D;
-
 }
 
-i:hover {
-	
+i:hover {	
 }
 
 
@@ -74,15 +82,177 @@ i:hover {
 a {
 	opacity: 0.5;
 	text-decoration: none;
+	font-size: 1.3em;
 	transition: font-size 0.8s;
 }
 
 a:hover {
 	opacity: 1;
-	font-size: 1.1em;
+	font-size: 1.4em;
 	transition: font-size 1s;
 }
 
+/* ============================================================================================================================
+== TWITTER
+** ============================================================================================================================ */
+
+.example-twitter {
+  position:relative;
+  padding:15px;
+  margin:100px 0 0.5em;
+  color:#333;
+  background:#eee;
+  /* css3 */
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+
+  top: -325px;
+  left:	75%;
+
+  text-align: center;
+  animation-name: talk;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+
+  height: 125px;
+}
+
+.example-twitter p {
+	font-size:28px; 
+	line-height:1.25em;
+	font-family: 'HappyMonkey-Regular', cursive;
+}
+
+/* creates the triangle */
+.example-twitter:after {
+  content:"";
+  position:absolute;
+  top: 60%;
+  left:-30px;
+  border:15px solid transparent;
+  border-bottom-color:#eee;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+  transform: rotate(-90deg);
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.example-twitter + p {padding-left:15px; font:14px Arial, sans-serif;}
+
+/* ============================================================================================================================
+== END - TWITTER
+** ============================================================================================================================ */
+
+/* ==========================
+=== ANIMATIONS
+=============================*/
+
+.facebook {
+	visibility: hidden;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
+  	animation-fill-mode: forwards;
+}
+
+.twitter {
+	visibility: hidden;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 2s;
+  	animation-fill-mode: forwards;
+}
+
+.instagram {
+	visibility: hidden;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+  	animation-fill-mode: forwards;
+}
+
+.linkedin {
+	visibility: hidden;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 3s;
+  	animation-fill-mode: forwards;
+}
+
+.mail {
+	visibility: hidden;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 3.5s;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+	from {
+		opacity: 0;
+	}
+
+	to {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes talk {
+	0% {
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+
+	16% {
+		opacity: 0.5;
+		left: 42%;
+		animation-timing-function: ease-out;
+	}
+
+	32% {
+		opacity: 0.75;
+		left: 51%;
+		animation-timing-function: ease-in;
+	}
+
+	48% {
+		opacity: 0.9;
+		left: 44%;
+		animation-timing-function: ease-out;
+	}
+
+	62% {
+		opacity: 1;
+		left: 47%;
+		animation-timing-function: ease-in;
+	}
+
+	78% {
+		opacity: 1;
+		left: 45%;
+		animation-timing-function: ease-out;
+	}
+
+	90% {
+		opacity: 1;
+		left: 46%;
+		animation-timing-function: ease-in;
+	}
+
+	100% {
+		opacity: 1;
+		left: 45%;
+		animation-timing-function: ease-out;
+		
+	}
+}
+
+.quote {
+	width: 250%;
+}
 
 @font-face	{
 	font-family: 'HappyMonkey-Regular';
