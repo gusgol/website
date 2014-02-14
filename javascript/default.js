@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	//	
+	/*
 	 $(".facebook").mouseover(function(){
 	     $('body').css('background-image', 'url(image/fb.png)');
-	     $("#quote").text("Maybe you want to poke me...");
+	     $("#quote").text("Maybe you want to stalk me!");
 	 });
 	 $(".facebook").mouseout(function(){
 	     $('body').css('background-image', 'none');
@@ -10,7 +10,7 @@ $(document).ready(function(){
 	 });
 	 $(".twitter").mouseover(function(){
 	     $('body').css('background-image', 'url(image/twitter.png)');
-	     $("#quote").text("Leave me a nice message?");
+	     $("#quote").text("Read what I've been saying...");
 	 });
 	 $(".twitter").mouseout(function(){
 	     $('body').css('background-image', 'none');
@@ -34,10 +34,11 @@ $(document).ready(function(){
 	 });
 	 $(".mail").mouseover(function(){
 	     $('body').css('background-image', 'url(image/mail.png)');
-	     $("#quote").text("Or just send me an e-mail...");
+	     $("#quote").text("Or maybe you just want to send me an e-mail...");
 	 });
 	 $(".mail").mouseout(function(){
 	     $('body').css('background-image', 'none');
 	     $("#quote").text("Hi, I'm Gustavo! Want to know me better?");
 	 });
+	*/
 });
